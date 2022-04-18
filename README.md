@@ -1,2 +1,2 @@
-# poc-monorepos
-⚡ Proof of concept for turborepo based monorepos
+# ex-monorepos
+⚡ Proof of concepts for turborepo based monorepos
