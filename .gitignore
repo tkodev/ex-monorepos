@@ -29,5 +29,17 @@ yarn-error.log*
 .env.test.local
 .env.production.local
 
+# general
+.vscode
+node_modules
+dist
+lib
+coverage
+*.log
+.jest-*
+.DS_Store
+__gitignore/
+*__gitignore
+
 # turbo
 .turbo
