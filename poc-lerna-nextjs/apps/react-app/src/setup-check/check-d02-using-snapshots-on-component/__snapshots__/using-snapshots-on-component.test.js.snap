@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Using Snapshots on component.firstChild 1`] = `
+<div>
+  <div
+    class="myStyle"
+  >
+    <span>
+      This is a component is use to check snapshots if work
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Using Snapshots on component.innerHTML 1`] = `"<div><div class=\\"myStyle\\"><span>This is a component is use to check snapshots if work</span></div></div>"`;

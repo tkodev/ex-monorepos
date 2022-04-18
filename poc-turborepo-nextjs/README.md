@@ -1,5 +1,5 @@
-# poc-turborepo-mui-next
-⚡ Proof of concept for turborepo + mui + nextjs
+# poc-turborepo-nextjs
+⚡ Proof of concept for turborepo monorepo + nextjs
 
 ## Structure
 ```

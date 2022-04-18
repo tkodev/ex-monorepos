@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Using Snapshots 1`] = `
+Array [
+  Object {
+    "a": "a",
+  },
+  Object {
+    "b": "b",
+  },
+  Object {
+    "c": "c",
+  },
+]
+`;

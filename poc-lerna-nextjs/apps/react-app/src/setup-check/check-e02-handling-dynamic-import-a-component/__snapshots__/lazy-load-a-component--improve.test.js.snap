@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`lazy load a component (imrpoved) 1`] = `
+<p
+  class="loading-in-progress"
+>
+  ...loading
+</p>
+`;
+
+exports[`lazy load a component (imrpoved) 2`] = `
+<div
+  class="component-to-lazy-load"
+>
+  lazy loaded content
+</div>
+`;

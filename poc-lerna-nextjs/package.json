@@ -1,0 +1,61 @@
+{
+  "name": "root",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "workspaces": [
+    "ui/*",
+    "apps/*",
+    "utils/*"
+  ],
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.6",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/preset-env": "^7.8.6",
+    "@babel/preset-react": "^7.8.3",
+    "@storybook/react": "^5.3.14",
+    "@testing-library/jest-dom": "^5.1.1",
+    "@testing-library/react": "^9.4.1",
+    "@testing-library/user-event": "^10.0.0",
+    "@types/jest": "^25.1.3",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-jest": "^25.1.0",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-styled-components": "^1.10.7",
+    "fetch-mock": "^9.0.0-beta.2",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^25.1.0",
+    "jest-watch-typeahead": "^0.4.2",
+    "lerna": "^3.20.2",
+    "redux-mock-store": "^1.5.4"
+  },
+  "dependencies": {
+    "core-js": "2.6.11"
+  },
+  "scripts": {
+    "mono:bootstrap": "lerna bootstrap --use-workspaces",
+    "mono:clean": "rm -fr node_modules && lerna clean",
+    "build:ui": "lerna --scope=@myscope/ui--* exec --parallel -- babel --root-mode upward src -d lib --ignore **/*.stories.js,**/*.test.js",
+    "build:util": "lerna --scope=@myscope/util--* exec --parallel -- babel --root-mode upward src -d lib --ignore **/*.stories.js,**/*.test.js",
+    "build:cleanAll": "yarn workspaces run build:clean",
+    "reactapp:dev": "yarn workspace @myscope/app--my-react-app run dev",
+    "reactapp:build": "yarn workspace @myscope/app--my-react-app run build",
+    "reactapp:serve": "yarn workspace @myscope/app--my-react-app run start",
+    "todoapp:dev": "yarn workspace @myscope/app--todo-app run dev",
+    "todoapp:build": "yarn workspace @myscope/app--todo-app run build",
+    "todoapp:serve": "yarn workspace @myscope/app--todo-app run start",
+    "nextjsapp:dev": "yarn workspace @myscope/app--my-nextjs-app run dev",
+    "nextjsapp:build": "yarn workspace @myscope/app--my-react-app run build",
+    "nodeapp:dev": "yarn workspace @myscope/app--node-app run dev",
+    "nodeapp:build": "yarn workspace @myscope/app--node-app run build",
+    "nodeapp:serve": "yarn workspace @myscope/app--node-app run start",
+    "story": "start-storybook -p 5555",
+    "test": "jest",
+    "t:w": "jest --watch",
+    "t:wa": "jest --watchAll",
+    "t:coverage": "jest --coverage",
+    "t:clearCache": "jest --clearCache",
+    "t:debug": "node --inspect-brk ./node_modules/jest/bin/jest.js --runInBand"
+  }
+}

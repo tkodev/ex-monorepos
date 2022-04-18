@@ -1,0 +1,12 @@
+.vscode
+node_modules
+dist
+lib
+coverage
+*.log
+.jest-*
+.DS_Store
+
+__gitignore/
+*__gitignore
+
