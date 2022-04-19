@@ -1,6 +1,1 @@
-const config = require("config/eslint-preset");
-
-module.exports = {
-  ...config,
-  extends: ["next/babel", ...config.extends]
-}
+module.exports = require("config/eslint-preset");
